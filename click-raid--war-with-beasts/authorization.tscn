@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://c5tbr6gpr0v28"]
+
+[ext_resource type="Texture2D" uid="uid://c3evr57sdxe0e" path="res://assets/Untitled 05-10-2026 12-16-22.png" id="1_4gxd7"]
+
+[node name="Lager" type="Node2D" unique_id=1358243856]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1374264552]
+position = Vector2(512.25006, 479.25)
+scale = Vector2(0.9956056, 0.93310547)
+texture = ExtResource("1_4gxd7")
+
+[node name="Оружейная" type="Button" parent="." unique_id=1276619291]
+offset_left = 197.0
+offset_top = 118.0
+offset_right = 390.0
+offset_bottom = 278.0
+text = "Оружейная"
+
+[node name="Больница" type="Button" parent="." unique_id=856526389]
+offset_left = 437.0
+offset_top = 126.0
+offset_right = 736.0
+offset_bottom = 278.0
+text = "Больница"
