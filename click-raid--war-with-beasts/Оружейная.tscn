@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://by4dpra2kry"]
+
+[ext_resource type="Texture2D" uid="uid://blkd1oba4l14g" path="res://assets/Untitled 05-10-2026 04-09-31.png" id="1_2og4f"]
+
+[node name="Node2D" type="Node2D" unique_id=547626527]
+
+[node name="Untitled05102026040931" type="Sprite2D" parent="." unique_id=1048290874]
+position = Vector2(515, 480.50003)
+scale = Vector2(1.001953, 0.9326172)
+texture = ExtResource("1_2og4f")
+
+[node name="Button" type="Button" parent="." unique_id=736146637]
+offset_left = 61.0
+offset_top = 200.0
+offset_right = 937.0
+offset_bottom = 337.0
+text = "Оружие 1"
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=1375359239]
+offset_left = 225.0
+offset_top = 37.0
+offset_right = 809.0
+offset_bottom = 158.0
+text = "Оружейная"
+alignment = 1
+
+[node name="Button2" type="Button" parent="." unique_id=780522457]
+offset_left = 63.0
+offset_top = 366.0
+offset_right = 939.0
+offset_bottom = 503.0
+text = "Оружие 2"
+
+[node name="Button3" type="Button" parent="." unique_id=1336297082]
+offset_left = 64.0
+offset_top = 524.0
+offset_right = 940.0
+offset_bottom = 661.0
+text = "Оружие 3"
+
+[node name="Button4" type="Button" parent="." unique_id=237242328]
+offset_left = 64.0
+offset_top = 680.0
+offset_right = 940.0
+offset_bottom = 817.0
+text = "Оружие 4"
+
+[node name="Button5" type="Button" parent="." unique_id=909188099]
+offset_left = 830.0
+offset_top = 59.0
+offset_right = 976.0
+offset_bottom = 142.0
+text = "Выйти"

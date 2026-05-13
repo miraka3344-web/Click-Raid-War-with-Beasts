@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://ysp7j4fhn1aa"]
+
+[ext_resource type="Texture2D" uid="uid://c3evr57sdxe0e" path="res://assets/Untitled 05-10-2026 12-16-22.png" id="1_wtcfe"]
+
+[node name="Node2D" type="Node2D" unique_id=1865937431]
+
+[node name="Untitled05102026121622" type="Sprite2D" parent="." unique_id=1071653167]
+position = Vector2(512.5, 478.5)
+scale = Vector2(1.0029297, 0.93652344)
+texture = ExtResource("1_wtcfe")
+
+[node name="Button" type="Button" parent="." unique_id=628171091]
+offset_left = 189.0
+offset_top = 118.0
+offset_right = 387.0
+offset_bottom = 272.0
+text = "Оружейная"
+
+[node name="Button2" type="Button" parent="." unique_id=1716554422]
+offset_left = 437.0
+offset_top = 122.0
+offset_right = 736.0
+offset_bottom = 278.0
+text = "Больница"
+
+[node name="Button3" type="Button" parent="." unique_id=568369451]
+offset_left = 808.0
+offset_top = 126.0
+offset_right = 895.0
+offset_bottom = 209.0
+text = "Настройки"
+
+[node name="Button4" type="Button" parent="." unique_id=867264655]
+offset_left = 793.0
+offset_top = 710.0
+offset_right = 891.0
+offset_bottom = 799.0
+text = "Перерож
+дения"
+
+[node name="Button5" type="Button" parent="." unique_id=1522980181]
+offset_left = 152.0
+offset_top = 647.0
+offset_right = 441.0
+offset_bottom = 842.0
+text = "Ферма"
+
+[node name="Button6" type="Button" parent="." unique_id=2041838770]
+offset_left = 583.0
+offset_top = 680.0
+offset_right = 747.0
+offset_bottom = 821.0
+text = "Качалка"
+
+[node name="Button7" type="Button" parent="." unique_id=1918087795]
+offset_left = 390.0
+offset_top = 358.0
+offset_right = 639.0
+offset_bottom = 574.0
+text = "Главное здание"
+
+[node name="Button8" type="Button" parent="." unique_id=468281793]
+offset_left = 6.0
+offset_top = 371.0
+offset_right = 188.0
+offset_bottom = 617.0
+text = "Бесконечная
+Игра"
+
+[node name="Button9" type="Button" parent="." unique_id=442814642]
+offset_left = 834.0
+offset_top = 337.0
+offset_right = 1022.0
+offset_bottom = 641.0
+text = "Игра"

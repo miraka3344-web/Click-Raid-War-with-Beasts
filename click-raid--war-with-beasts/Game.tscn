@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dhag5r7pn6rmj"]
+
+[ext_resource type="Texture2D" uid="uid://daoj4uhaxoxhs" path="res://assets/Untitled 05-10-2026 10-47-48.png" id="1_xkndl"]
+[ext_resource type="Texture2D" uid="uid://dg67p5l78lc6r" path="res://icon.svg" id="2_u44n3"]
+
+[node name="Node2D" type="Node2D" unique_id=2095810447]
+
+[node name="Untitled05102026104748" type="Sprite2D" parent="." unique_id=1622783132]
+position = Vector2(513, 481)
+scale = Vector2(1, 0.93359375)
+texture = ExtResource("1_xkndl")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1669779308]
+position = Vector2(156, 657)
+texture = ExtResource("2_u44n3")
+
+[node name="Icon2" type="Sprite2D" parent="." unique_id=386949415]
+position = Vector2(893, 674)
+texture = ExtResource("2_u44n3")
+
+[node name="Icon3" type="Sprite2D" parent="." unique_id=1116176152]
+position = Vector2(713, 670)
+texture = ExtResource("2_u44n3")
+
+[node name="Button" type="Button" parent="." unique_id=1726022328]
+offset_left = 793.0
+offset_top = 35.0
+offset_right = 1002.0
+offset_bottom = 140.0
+text = "Стоп
+"
