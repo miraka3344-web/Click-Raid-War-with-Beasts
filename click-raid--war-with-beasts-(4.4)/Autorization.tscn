@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxgwfn43dvhv5"]
+
+[ext_resource type="Texture2D" uid="uid://blkd1oba4l14g" path="res://assets/Untitled 05-10-2026 04-09-31.png" id="1_4i8hn"]
+[ext_resource type="Script" uid="uid://cd4nmnvjdurf1" path="res://Reg.gd" id="2_1dv43"]
+[ext_resource type="Script" uid="uid://dlcb2wbepo074" path="res://Vhod.gd" id="3_gw8at"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Untitled05-10-202604-09-31" type="Sprite2D" parent="."]
+position = Vector2(514.5, 479.5)
+scale = Vector2(0.999023, 0.932617)
+texture = ExtResource("1_4i8hn")
+
+[node name="Button1" type="Button" parent="."]
+offset_left = 198.0
+offset_top = 145.0
+offset_right = 875.0
+offset_bottom = 377.0
+text = "Зарегестрироваться"
+script = ExtResource("2_1dv43")
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 195.0
+offset_top = 469.0
+offset_right = 873.0
+offset_bottom = 702.0
+text = "Войти"
+script = ExtResource("3_gw8at")
+
+[connection signal="pressed" from="Button1" to="Button1" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
