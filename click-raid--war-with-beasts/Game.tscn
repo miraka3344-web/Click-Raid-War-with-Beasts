@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://dhag5r7pn6rmj"]
+
+[ext_resource type="Script" uid="uid://d1cb0gu0ucy3s" path="res://game.gd" id="1_sb48q"]
+[ext_resource type="Texture2D" uid="uid://daoj4uhaxoxhs" path="res://assets/Untitled 05-10-2026 10-47-48.png" id="1_xkndl"]
+[ext_resource type="PackedScene" uid="uid://cb104fee31l6e" path="res://Zombe.tscn" id="3_t88pq"]
+[ext_resource type="PackedScene" uid="uid://bw2hqd1c3otua" path="res://player.tscn" id="4_r0x5m"]
+[ext_resource type="Script" uid="uid://bb3jsc0mldoy8" path="res://player.gd" id="5_t88pq"]
+
+[node name="Main" type="Node2D" unique_id=2095810447]
+script = ExtResource("1_sb48q")
+
+[node name="Untitled05102026104748" type="Sprite2D" parent="." unique_id=1622783132]
+position = Vector2(513, 481)
+scale = Vector2(1, 0.93359375)
+texture = ExtResource("1_xkndl")
+
+[node name="Button" type="Button" parent="." unique_id=1726022328]
+offset_left = 793.0
+offset_top = 35.0
+offset_right = 1002.0
+offset_bottom = 140.0
+text = "Стоп
+"
+
+[node name="SpawnTimer" type="Timer" parent="." unique_id=1106228831]
+wait_time = 2.0
+autostart = true
+
+[node name="Node2D2" parent="." unique_id=1327869683 instance=ExtResource("3_t88pq")]
+position = Vector2(893, 668)
+
+[node name="player" parent="." unique_id=1247534800 instance=ExtResource("4_r0x5m")]
+position = Vector2(123, 685)
+script = ExtResource("5_t88pq")

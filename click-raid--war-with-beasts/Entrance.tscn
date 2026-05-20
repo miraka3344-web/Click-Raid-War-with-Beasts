@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://cte2p48jcc2v7"]
+
+[ext_resource type="Texture2D" uid="uid://blkd1oba4l14g" path="res://assets/Untitled 05-10-2026 04-09-31.png" id="1_n83ow"]
+[ext_resource type="Script" uid="uid://boeg6kd0v8nys" path="res://Entrancebut.gd" id="2_hup5r"]
+
+[node name="Node2D" type="Node2D" unique_id=1248235064]
+
+[node name="Untitled05-10-202604-09-31" type="Sprite2D" parent="." unique_id=1718233864]
+position = Vector2(515, 482)
+scale = Vector2(0.991211, 0.923828)
+texture = ExtResource("1_n83ow")
+
+[node name="Button" type="Button" parent="." unique_id=1446663249]
+offset_left = 258.0
+offset_top = 652.0
+offset_right = 797.0
+offset_bottom = 802.0
+text = "Готово"
+script = ExtResource("2_hup5r")
+
+[node name="Vhod" type="LineEdit" parent="." unique_id=2110888722]
+offset_left = 102.0
+offset_top = 92.0
+offset_right = 969.0
+offset_bottom = 257.0
+text = "Вход"
+alignment = 1
+
+[node name="Nik" type="LineEdit" parent="." unique_id=773713148]
+offset_left = 181.0
+offset_top = 298.0
+offset_right = 876.0
+offset_bottom = 433.0
+placeholder_text = "Введите ник"
+alignment = 1
+
+[node name="Password" type="LineEdit" parent="." unique_id=2108362362]
+offset_left = 187.0
+offset_top = 468.0
+offset_right = 882.0
+offset_bottom = 603.0
+placeholder_text = "Введите пароль"
+alignment = 1
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://cotg528b5g265"]
+
+[ext_resource type="Texture2D" uid="uid://blkd1oba4l14g" path="res://assets/Untitled 05-10-2026 04-09-31.png" id="1_blmiy"]
+[ext_resource type="Script" uid="uid://bteyrnktnbm7e" path="res://register.gd" id="1_qwnty"]
+
+[sub_resource type="GDScript" id="GDScript_p3ms7"]
+script/source = "extends Button
+
+func _ready():
+	pass
+
+
+func _process(_delta: float):
+	pass
+
+
+
+
+func _on_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://Lager.tscn\")
+"
+
+[node name="Node2D" type="Node2D" unique_id=1038682370]
+script = ExtResource("1_qwnty")
+
+[node name="Untitled05-10-202604-09-31" type="Sprite2D" parent="." unique_id=99608491]
+position = Vector2(511.5, 478)
+scale = Vector2(0.983398, 0.927734)
+texture = ExtResource("1_blmiy")
+
+[node name="LoginInput" type="LineEdit" parent="." unique_id=1511800626]
+offset_left = 192.0
+offset_top = 101.0
+offset_right = 887.0
+offset_bottom = 236.0
+placeholder_text = "Введите ник"
+alignment = 1
+
+[node name="PasswordInput" type="LineEdit" parent="." unique_id=380724320]
+offset_left = 189.0
+offset_top = 256.0
+offset_right = 884.0
+offset_bottom = 391.0
+placeholder_text = "Введите пароль"
+alignment = 1
+
+[node name="ConfirmInput" type="LineEdit" parent="." unique_id=2044881566]
+offset_left = 185.0
+offset_top = 414.0
+offset_right = 880.0
+offset_bottom = 549.0
+placeholder_text = "Подтвердите пароль"
+alignment = 1
+
+[node name="RegisterButton" type="Button" parent="." unique_id=607230999]
+offset_left = 249.0
+offset_top = 594.0
+offset_right = 788.0
+offset_bottom = 744.0
+text = "Регистрация"
+script = SubResource("GDScript_p3ms7")
+
+[node name="Label" type="Label" parent="." unique_id=724112043]
+offset_left = 181.0
+offset_top = 782.0
+offset_right = 882.0
+offset_bottom = 902.0
+
+[connection signal="pressed" from="RegisterButton" to="RegisterButton" method="_on_pressed"]

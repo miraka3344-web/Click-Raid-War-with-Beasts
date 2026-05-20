@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://dswrk2eglvygf"]
+
+[ext_resource type="Texture2D" uid="uid://blkd1oba4l14g" path="res://assets/Untitled 05-10-2026 04-09-31.png" id="1_1mw8r"]
+[ext_resource type="Script" uid="uid://ub84q7m0id7p" path="res://exit_gospital.gd" id="2_afjj7"]
+
+[node name="Node2D" type="Node2D" unique_id=773318342]
+
+[node name="Untitled05102026040931" type="Sprite2D" parent="." unique_id=374596170]
+position = Vector2(511.75, 483)
+scale = Vector2(0.99462885, 0.93847656)
+texture = ExtResource("1_1mw8r")
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=1142297301]
+offset_left = 245.0
+offset_top = 60.0
+offset_right = 761.0
+offset_bottom = 186.0
+text = "Больница"
+alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1430648217]
+offset_left = 99.0
+offset_top = 230.0
+offset_right = 916.0
+offset_bottom = 355.0
+text = "Вылечить персонажа"
+
+[node name="Button2" type="Button" parent="." unique_id=1951417387]
+offset_left = 105.0
+offset_top = 407.0
+offset_right = 922.0
+offset_bottom = 532.0
+text = "Вылечить персонажа"
+
+[node name="Button3" type="Button" parent="." unique_id=2581468]
+offset_left = 111.0
+offset_top = 577.0
+offset_right = 928.0
+offset_bottom = 702.0
+text = "Вылечить персонажа"
+
+[node name="Button4" type="Button" parent="." unique_id=1392954050]
+offset_left = 111.0
+offset_top = 739.0
+offset_right = 928.0
+offset_bottom = 864.0
+text = "Вылечить персонажа"
+
+[node name="ExitGospital" type="Button" parent="." unique_id=61136046]
+offset_left = 805.0
+offset_top = 64.0
+offset_right = 970.0
+offset_bottom = 183.0
+text = "выход"
+script = ExtResource("2_afjj7")
+
+[connection signal="pressed" from="ExitGospital" to="ExitGospital" method="_on_pressed"]

@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://ysp7j4fhn1aa"]
+
+[ext_resource type="Texture2D" uid="uid://c3evr57sdxe0e" path="res://assets/Untitled 05-10-2026 12-16-22.png" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://vo2jvd2ev2af" path="res://weapon.gd" id="2_421vn"]
+[ext_resource type="Script" uid="uid://cdtgfuenw2w4k" path="res://gl_house.gd" id="2_cy2gr"]
+[ext_resource type="Script" uid="uid://dwgm06iovht80" path="res://game_but.gd" id="2_olqot"]
+[ext_resource type="Script" uid="uid://e1mqx6tot3y7" path="res://gospital.gd" id="3_bpgbo"]
+[ext_resource type="Script" uid="uid://cwjqcaej65dlw" path="res://ferm.gd" id="4_ivgpg"]
+
+[node name="Node2D" type="Node2D" unique_id=1865937431]
+
+[node name="Untitled05102026121622" type="Sprite2D" parent="." unique_id=1071653167]
+position = Vector2(512.5, 478.5)
+scale = Vector2(1.0029297, 0.93652344)
+texture = ExtResource("1_wtcfe")
+
+[node name="Weapon" type="Button" parent="." unique_id=628171091]
+offset_left = 189.0
+offset_top = 118.0
+offset_right = 387.0
+offset_bottom = 272.0
+text = "Оружейная"
+script = ExtResource("2_421vn")
+
+[node name="Gospital" type="Button" parent="." unique_id=1716554422]
+offset_left = 437.0
+offset_top = 122.0
+offset_right = 736.0
+offset_bottom = 278.0
+text = "Больница"
+script = ExtResource("3_bpgbo")
+
+[node name="Nastroyki" type="Button" parent="." unique_id=568369451]
+offset_left = 808.0
+offset_top = 126.0
+offset_right = 895.0
+offset_bottom = 209.0
+text = "Настройки"
+
+[node name="Reset" type="Button" parent="." unique_id=867264655]
+offset_left = 793.0
+offset_top = 710.0
+offset_right = 891.0
+offset_bottom = 799.0
+text = "Перерож
+дения"
+
+[node name="Ferm" type="Button" parent="." unique_id=1522980181]
+offset_left = 152.0
+offset_top = 647.0
+offset_right = 441.0
+offset_bottom = 842.0
+text = "Ферма"
+script = ExtResource("4_ivgpg")
+
+[node name="Gym" type="Button" parent="." unique_id=2041838770]
+offset_left = 583.0
+offset_top = 680.0
+offset_right = 747.0
+offset_bottom = 821.0
+text = "Качалка"
+
+[node name="GlHouse" type="Button" parent="." unique_id=1918087795]
+offset_left = 390.0
+offset_top = 358.0
+offset_right = 639.0
+offset_bottom = 574.0
+text = "Главное здание"
+script = ExtResource("2_cy2gr")
+
+[node name="GameFul" type="Button" parent="." unique_id=468281793]
+offset_left = 6.0
+offset_top = 371.0
+offset_right = 188.0
+offset_bottom = 617.0
+text = "Бесконечная
+Игра"
+
+[node name="GameBut" type="Button" parent="." unique_id=442814642]
+offset_left = 834.0
+offset_top = 337.0
+offset_right = 1022.0
+offset_bottom = 641.0
+text = "Игра"
+script = ExtResource("2_olqot")
+
+[connection signal="pressed" from="Weapon" to="Weapon" method="_on_pressed"]
+[connection signal="pressed" from="Gospital" to="Gospital" method="_on_pressed"]
+[connection signal="pressed" from="Ferm" to="Ferm" method="_on_pressed"]
+[connection signal="pressed" from="GlHouse" to="GlHouse" method="_on_pressed"]
+[connection signal="pressed" from="GameBut" to="GameBut" method="_on_pressed"]

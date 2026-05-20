@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://dwjrcf3wygwhj"]
+
+[ext_resource type="Texture2D" uid="uid://blkd1oba4l14g" path="res://assets/Untitled 05-10-2026 04-09-31.png" id="1_i4toi"]
+[ext_resource type="Script" uid="uid://cxklpsvkk6yig" path="res://ferm_exit.gd" id="2_gu6ej"]
+
+[node name="Node2D" type="Node2D" unique_id=1240644317]
+
+[node name="Untitled05102026040931" type="Sprite2D" parent="." unique_id=644054077]
+position = Vector2(512, 483)
+scale = Vector2(1, 0.9394531)
+texture = ExtResource("1_i4toi")
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=583086774]
+offset_left = 173.0
+offset_top = 56.0
+offset_right = 754.0
+offset_bottom = 202.0
+text = "Ферма"
+alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=424626271]
+offset_left = 75.0
+offset_top = 250.0
+offset_right = 934.0
+offset_bottom = 373.0
+text = "Купить продукт"
+
+[node name="Button2" type="Button" parent="." unique_id=356581946]
+offset_left = 77.0
+offset_top = 398.0
+offset_right = 936.0
+offset_bottom = 521.0
+text = "Купить продукт"
+
+[node name="Button3" type="Button" parent="." unique_id=2026124059]
+offset_left = 83.0
+offset_top = 548.0
+offset_right = 942.0
+offset_bottom = 671.0
+text = "Купить продукт"
+
+[node name="Button4" type="Button" parent="." unique_id=1189114274]
+offset_left = 77.0
+offset_top = 694.0
+offset_right = 936.0
+offset_bottom = 817.0
+text = "Купить продукт"
+
+[node name="FermExit" type="Button" parent="." unique_id=364796756]
+offset_left = 810.0
+offset_top = 81.0
+offset_right = 946.0
+offset_bottom = 185.0
+text = "Выход"
+script = ExtResource("2_gu6ej")
+
+[connection signal="pressed" from="FermExit" to="FermExit" method="_on_pressed"]
