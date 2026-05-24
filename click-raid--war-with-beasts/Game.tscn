@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://daoj4uhaxoxhs" path="res://assets/Untitled 05-10-2026 10-47-48.png" id="1_xkndl"]
 [ext_resource type="PackedScene" uid="uid://cb104fee31l6e" path="res://Zombe.tscn" id="3_t88pq"]
 [ext_resource type="PackedScene" uid="uid://bw2hqd1c3otua" path="res://player.tscn" id="4_r0x5m"]
-[ext_resource type="Script" uid="uid://bb3jsc0mldoy8" path="res://player.gd" id="5_t88pq"]
+[ext_resource type="PackedScene" uid="uid://dm87v8b44aml5" path="res://zombie_spawner.tscn" id="5_t88pq"]
 
 [node name="Main" type="Node2D" unique_id=2095810447]
 script = ExtResource("1_sb48q")
@@ -30,5 +30,7 @@ autostart = true
 position = Vector2(893, 668)
 
 [node name="player" parent="." unique_id=1247534800 instance=ExtResource("4_r0x5m")]
-position = Vector2(123, 685)
-script = ExtResource("5_t88pq")
+position = Vector2(192, 694)
+
+[node name="ZombieSpawner" parent="." unique_id=1112605442 instance=ExtResource("5_t88pq")]
+position = Vector2(899, 671)

@@ -11,15 +11,17 @@ size = Vector2(128, 128)
 script = ExtResource("3_i3pqv")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=586637737]
+position = Vector2(-122, -3)
 texture = ExtResource("2_i3pqv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1124828491]
+position = Vector2(-122, -3)
 shape = SubResource("RectangleShape2D_4flbx")
 
 [node name="Node2D" type="Node2D" parent="." unique_id=210181790]
-position = Vector2(65, -1)
+position = Vector2(-1, 0)
 
 [node name="Bullet" parent="." unique_id=1592214288 instance=ExtResource("2_onrkg")]
 light_mask = 1
 visibility_layer = 1
-position = Vector2(88, -23)
+position = Vector2(-123, -3)

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dm87v8b44aml5"]
+
+[ext_resource type="Script" uid="uid://b8i6fq0v6w68e" path="res://zombie_spawner.gd" id="1_p4brw"]
+
+[node name="ZombieSpawner" type="Node2D" unique_id=1112605442]
+script = ExtResource("1_p4brw")
+
+[node name="SpawnTimer" type="Timer" parent="." unique_id=1880761021]
+wait_time = 2.0
+autostart = true

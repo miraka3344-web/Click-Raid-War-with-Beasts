@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://yuwidorhsntx"]
+
+[ext_resource type="Texture2D" uid="uid://blkd1oba4l14g" path="res://assets/Untitled 05-10-2026 04-09-31.png" id="1_0gyil"]
+[ext_resource type="Script" uid="uid://0c5l2xtuwwwa" path="res://death_game.gd" id="2_vschc"]
+[ext_resource type="Script" uid="uid://bg76cmoavrt21" path="res://death_lager.gd" id="3_tath6"]
+
+[node name="Node2D" type="Node2D" unique_id=916886077]
+
+[node name="Untitled05102026040931" type="Sprite2D" parent="." unique_id=938729540]
+position = Vector2(510.5, 479)
+scale = Vector2(0.9951172, 0.9375)
+texture = ExtResource("1_0gyil")
+
+[node name="DeathGame" type="Button" parent="." unique_id=1274966081]
+offset_left = 190.0
+offset_top = 271.0
+offset_right = 825.0
+offset_bottom = 460.0
+text = "Играть заново"
+script = ExtResource("2_vschc")
+
+[node name="DeathLager" type="Button" parent="." unique_id=1148549279]
+offset_left = 195.0
+offset_top = 514.0
+offset_right = 830.0
+offset_bottom = 703.0
+text = "В Лагерь"
+script = ExtResource("3_tath6")
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=83415424]
+offset_left = 5.0
+offset_top = 51.0
+offset_right = 1023.0
+offset_bottom = 171.0
+text = "ВЫ ПОГИБЛИ"
+alignment = 1
+
+[connection signal="pressed" from="DeathGame" to="DeathGame" method="_on_pressed"]
+[connection signal="pressed" from="DeathLager" to="DeathLager" method="_on_pressed"]
